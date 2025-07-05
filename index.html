@@ -16,18 +16,21 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css3/estilos1.css">
+
+
 </head>
 
 <body>
 
+
+
     <!-- AQUÍ EMPIEZA EL HEADER -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark" role="navigation" aria-label="Menu Principal">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="media/img/logo-sin-fondo.png" alt="Logo" style="width: 150px;">
+                    <img src="media/img/logo-sin-fondo.png" alt="Logo" style="width: 150px;" loading="lazy">
                 </a>
                 <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false"
@@ -39,6 +42,7 @@
                         <li class="nav-item"><a class="nav-link text-white" href="#que-evitas">Qué evitas</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="#quienes-somos">¿Quiénes somos?</a>
                         </li>
+
                         <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="#como-funciona">Cómo funciona</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="#propiedades">Propiedades</a></li>
@@ -48,11 +52,11 @@
         </nav>
         <div class="min-vh-70">
             <div class="container text-white mt-5">
-                <h3 class="fs-5 mb-5" style="color: rgb(255, 255, 72);">DESCUBRE CÓMO ALQUILAR TU VIVIENDA MAXIMIZANDO
+                <h3 class="fs-5 mb-5 text-warning">DESCUBRE CÓMO ALQUILAR TU VIVIENDA MAXIMIZANDO
                     TUS INGRESOS</h3>
                 <h1 class="mb-5">Brindamos soluciones a propietarios que no desean preocuparse por su alquiler.</h1>
-                <h3 class="fs-5 mb-5" style="color: rgb(255, 255, 72);">Somos tu inquilino perfecto.</h3>
-                <a class="text-white btn btn-primary btn-lg p-3 fs-3" href="https://wa.me/34635638146" target="_blank"
+                <h3 class="fs-5 mb-5 text-warning">Somos tu inquilino perfecto.</h3>
+                <a class="text-white btn btn-primary btn-lg p-3 fs-3" href="https://wa.me/+34635638146" target="_blank"
                     aria-label="Contactar vía WhatsApp" rel="noopener">CONTÁCTENOS</a>
             </div>
         </div>
@@ -69,7 +73,8 @@
                     Adiós a los problemas.</h3>
                 <div class="row align-items-center g-4">
                     <div class="col-12 col-lg-6">
-                        <img src="media/img/habitacion-superior.jpeg" alt="habitación-superior" class="img-fluid">
+                        <img src="media/img/habitacion-superior.jpeg" alt="habitación-superior" class="img-fluid"
+                            loading="lazy">
                     </div>
                     <div class="col-12 col-lg-6">
                         <ul class="list-main fs-4">
@@ -110,7 +115,8 @@
                     </div>
                     <div class="col-12 col-lg-6 d-flex">
                         <img src="media/img/terraza3.png" class="img-fluid align-self-stretch" alt="terraza3"
-                            style="object-fit: cover;">
+                            style="object-fit: cover;" loading="lazy">
+
                     </div>
                 </div>
             </div>
@@ -129,12 +135,14 @@
                             style="width: 40rem; background-image: url(media/img/fondo-anochecer.jpg);">
                             <h3 class="card-title fs-1 mb-4 text-center text-primary">Contacto</h3>
                             <h4 class="card-text fs-3 mb-4 text-warning text-center">¿Quieres más información?</h4>
-                            <p class="card-text fs-5 text-white text-center">¡Ponte en contacto con nosotros para recibir más
+                            <p class="card-text fs-5 text-white text-center">¡Ponte en contacto con nosotros para
+                                recibir más
                                 información! Con mucho gusto te responderemos lo más rápidamente posible.</p>
                             <a href="https://wa.me/34635638146" target="_blank" aria-label="Contactar vía WhatsApp"
                                 rel="noopener">
                                 <img src="media/img/whatssap.jpg" class="img-fluid d-block mx-auto my-5 rounded-circle"
-                                    style="width: 150px; height: 150px; object-fit: cover;" alt="WhatsApp">
+                                    style="width: 150px; height: 150px; object-fit: cover;" alt="WhatsApp"
+                                    loading="lazy">
                             </a>
                         </div>
                     </div>
@@ -228,8 +236,9 @@
                     <p>Teléfono: <a href="tel:34635638146" class="text-warning">+34 635 63 81 46</a></p>
                 </div>
                 <div class="col-12 col-lg-3">
-                    <p>Correo&nbsp;electrónico:<a href="mailto:Atenciahomes@gmail.com" class="text-warning">Atenciahomes@gmail.com</a></p>
-                           
+                    <p>Correo&nbsp;electrónico:<a href="mailto:Atenciahomes@gmail.com"
+                            class="text-warning">Atenciahomes@gmail.com</a></p>
+
                 </div>
             </div>
             <div class="text-center mt-4 text-warning small">
@@ -240,6 +249,27 @@
     </footer>
     <!-- FIN FOOTER -->
 
-</body>
 
+    <a href="#top" id="scrollToTop" aria-label="Volver al inicio">↑</a>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const scrollBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollBtn.style.display = 'block';
+            } else {
+                scrollBtn.style.display = 'none';
+            }
+        });
+    </script>
+
+
+
+
+
+
+</body>
 </html>
